@@ -35,7 +35,9 @@ export default [
             'jsdoc/check-tag-names': 'off',
             'lines-between-class-members': 'off',
             'no-await-in-loop': 'off',
-            'require-atomic-updates': 'off'
+            'require-atomic-updates': 'off',
+            // warn on console.log calls so I remember to remove debug logging before committing
+            'no-console': ['warn', { allow: ['warn', 'error'] }]
         }
     }, {
         files: ['**/*.mjs'],
