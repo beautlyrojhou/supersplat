@@ -47,44 +47,6 @@ The camera controls in SuperSplat are as follows:
 | Left/Right Arrow Keys                           | Strafe camera left/right        |
 | Up/Down Arrow Keys                              | Dolly camera forwards/backwards |
 | F Key                                           | Frame selection                 |
+| Scroll Wheel                                    | Dolly camera forwards/backwards |
 
-To set the target point for orbiting the camera, double click anywhere in the 3D view.
-
-## Visualizing Splats
-
-Splats can be rendered in two 'modes':
-
-* **Centers Mode**: A blue dot is rendered at the center of each Gaussian.
-* **Rings Mode**: A ring is rendered at the outer boundary of each Gaussian.
-
-You can disable rendering of the centers or rings (depending on the active mode) by pressing Space. This allows you to view the scene as it would normally appear.
-
-You can control the pixel size of the center dots in the VIEW OPTIONS panel.
-
-## Selecting and Deleting Splats
-
-Cropping splats or deleting unwanted Gaussians is a key function of SuperSplat. To help with this, there are 3 selection tools available:
-
-* **Picker Select**: Click to select, or click + drag to rect select.
-* **Brush Select**: Click and drag a selection circle. Change the brush size with the `[` and `]` keys.
-* **Sphere Select**: Activate a sphere volume to add or remove splats from the current selection. Double click on any splat to reposition the sphere volume.
-
-Once you are happy with your selection, you can delete it with the Delete key.
-
-## Transforming Splats
-
-SuperSplat can translate, rotate and scale splats. To do this, select a splat in the Scene Manager and activate one of the gizmos via the horizontal icon bar.
-
-To achieve fine grain control over the transform of the selected splat, you can use the TRANSFORM panel (below the SCENE MANAGER panel).
-
-To set the origin of the currently active gizmo, double click anywhere in the 3D view.
-
-## Merging Splats
-
-It is possible to merge multiple .ply files together and output a single, combine .ply file. Simply load any number of .ply files into Scene Manager, perform whatever transformations and edits you require, and then save the result via the `Scene` > `Save` menu item.
-
-## Inspecting Splat Data
-
-The Data Panel can be used to analyze the contents of your splat scenes. Initially, it is collapsed at the bottom of the application's window. To open it, click on the panel's header or press the 'D' key.
-
-The Data Panel plots various scene properties on a histogram display. You can select splats directly by dragging on the histogram view. Use the Shift key to add to the current selection and the Ctrl key to remove from the current selection.
+> **Note (personal):** On a trackpad, use two-finger scroll to dolly and pinch-to-zoom also works in most browsers.
