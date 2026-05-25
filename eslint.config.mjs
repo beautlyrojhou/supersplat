@@ -37,7 +37,11 @@ export default [
             'no-await-in-loop': 'off',
             'require-atomic-updates': 'off',
             // warn on console.log calls so I remember to remove debug logging before committing
-            'no-console': ['warn', { allow: ['warn', 'error'] }]
+            'no-console': ['warn', { allow: ['warn', 'error'] }],
+            // prefer const over let where possible
+            'prefer-const': 'error',
+            // disallow unused expressions to catch accidental typos
+            'no-unused-expressions': ['warn', { allowShortCircuit: true, allowTernary: true }]
         }
     }, {
         files: ['**/*.mjs'],
