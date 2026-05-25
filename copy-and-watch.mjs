@@ -54,10 +54,15 @@ export default function copyAndWatch(config) {
             resolvedConfig.targets.forEach(target => {
                 // read file as utf8 string if a transform is provided, otherwise read as raw buffer
                 const contents = fs.readFileSync(target.src, target.transform ? 'utf8' : null);
+                const source = target.transform ? target.transform(contents, target.src) : contents;
+
+                // log each emitted file so it's easier to trace copy operations during development
+                console.log(`[copy-and-watch] emitting ${target.dest}`);
+
                 this.emitFile({
                     type: 'asset',
                     fileName: target.dest,
-                    source: target.transform ? target.transform(contents, target.src) : contents
+                    source
                 });
             });
         }
