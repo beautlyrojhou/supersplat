@@ -56,8 +56,10 @@ export default function copyAndWatch(config) {
                 const contents = fs.readFileSync(target.src, target.transform ? 'utf8' : null);
                 const source = target.transform ? target.transform(contents, target.src) : contents;
 
-                // log each emitted file so it's easier to trace copy operations during development
-                console.log(`[copy-and-watch] emitting ${target.dest}`);
+                // only log emitted files in non-production builds to keep CI output clean
+                if (process.env.NODE_ENV !== 'production') {
+                    console.log(`[copy-and-watch] emitting ${target.dest}`);
+                }
 
                 this.emitFile({
                     type: 'asset',
