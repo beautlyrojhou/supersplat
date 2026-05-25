@@ -41,7 +41,11 @@ export default [
             // prefer const over let where possible
             'prefer-const': 'error',
             // disallow unused expressions to catch accidental typos
-            'no-unused-expressions': ['warn', { allowShortCircuit: true, allowTernary: true }]
+            'no-unused-expressions': ['warn', { allowShortCircuit: true, allowTernary: true }],
+            // enforce consistent spacing inside curly braces
+            'object-curly-spacing': ['error', 'always'],
+            // enforce single quotes for strings
+            'quotes': ['error', 'single', { avoidEscape: true }]
         }
     }, {
         files: ['**/*.mjs'],
