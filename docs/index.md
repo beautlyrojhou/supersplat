@@ -49,4 +49,4 @@ The camera controls in SuperSplat are as follows:
 | F Key                                           | Frame selection                 |
 | Scroll Wheel                                    | Dolly camera forwards/backwards |
 
-> **Note (personal):** On a trackpad, two-finger scroll maps to the scroll wheel for dollying, and pinch-to-zoom also works well for quick framing.
+> **Note (personal):** On a MacBook trackpad, two-finger scroll maps to the Scroll Wheel dolly, and two-finger click acts as the middle mouse button for dollying. Very handy when working without a mouse.
